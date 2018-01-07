@@ -1,0 +1,1453 @@
+# APT yn Gymraeg: APT in Welsh.
+# This file is under the same licence as APT itself.
+# Dafydd Harries <daf@muse.19inch.net>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: APT\n"
+"Report-Msgid-Bugs-To: APT Development Team <deity@lists.debian.org>\n"
+"POT-Creation-Date: 2012-03-15 19:05+0000\n"
+"PO-Revision-Date: 2015-10-22 16:34+0000\n"
+"Last-Translator: Dafydd Harries <Unknown>\n"
+"Language-Team: Welsh <cy@pengwyn.linux.org.uk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : (n != 8 && n != 11) ? "
+"2 : 3;\n"
+"X-Launchpad-Export-Date: 2016-06-13 10:31+0000\n"
+"X-Generator: Launchpad (build 18097)\n"
+"Language: cy\n"
+
+#: apt-private/private-unmet.cc
+#, c-format
+msgid "Package %s version %s has an unmet dep:\n"
+msgstr "Mae gan y pecyn %s fersiwn %s ddibyniaeth heb ei gwrdd:\n"
+
+#: cmdline/apt-cache.cc
+msgid "Total package names: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "Total package structures: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "  Normal packages: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "  Pure virtual packages: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "  Single virtual packages: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "  Mixed virtual packages: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "  Missing: "
+msgstr "  Ar Goll: "
+
+#: cmdline/apt-cache.cc
+msgid "Total distinct versions: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "Total distinct descriptions: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "Total dependencies: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "Total ver/file relations: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "Total Desc/File relations: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "Total Provides mappings: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "Total globbed strings: "
+msgstr ""
+
+#: cmdline/apt-cache.cc:328
+msgid "Total dependency version space: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "Total slack space: "
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "Total space accounted for: "
+msgstr ""
+
+#: apt-private/private-show.cc cmdline/apt-cache.cc
+#, c-format
+msgid "Package file %s is out of sync."
+msgstr "Nid yw'r ffeil pecyn %s yn gydamseredig."
+
+#: apt-private/private-depends.cc apt-private/private-show.cc
+#: cmdline/apt-mark.cc
+msgid "No packages found"
+msgstr "Canfuwyd dim pecyn"
+
+#: apt-private/private-search.cc
+msgid "You must give at least one search pattern"
+msgstr ""
+
+#: cmdline/apt-cache.cc
+msgid "This command is deprecated. Please use 'apt-mark showauto' instead."
+msgstr ""
+
+#: apt-private/private-show.cc
+#, c-format
+msgid "Unable to locate package %s"
+msgstr "Ni ellir lleoli'r pecyn %s"
+
+#: apt-private/private-show.cc
+msgid "Package files:"
+msgstr ""
+
+#: apt-private/private-show.cc
+msgid "Cache is out of sync, can't x-ref a package file"
+msgstr "Nid yw'r storfa yn gydamserol, ni ellir croesgyfeirio ffeil pecym"
+
+#. Show any packages have explicit pins
+#: apt-private/private-show.cc
+msgid "Pinned packages:"
+msgstr ""
+
+#: apt-private/private-show.cc
+msgid "(not found)"
+msgstr "(heb ganfod)"
+
+#: apt-private/private-show.cc
+msgid "  Installed: "
+msgstr "  Wedi Sefydlu: "
+
+#: apt-private/private-show.cc
+msgid "  Candidate: "
+msgstr "  Ymgeisydd: "
+
+#: apt-private/private-show.cc
+msgid "(none)"
+msgstr "(dim)"
+
+#: apt-private/private-show.cc
+msgid "  Package pin: "
+msgstr ""
+
+#. Show the priority tables
+#: apt-private/private-show.cc
+msgid "  Version table:"
+msgstr ""
+
+#: cmdline/apt-cache.cc:1720 cmdline/apt-cdrom.cc:197 cmdline/apt-config.cc:70
+#: cmdline/apt-extracttemplates.cc:225 ftparchive/apt-ftparchive.cc:588
+#: cmdline/apt-get.cc:2739 cmdline/apt-sortpkgs.cc:144
+#, c-format
+msgid "%s %s for %s compiled on %s %s\n"
+msgstr ""
+
+#: cmdline/apt-cache.cc:1682
+msgid ""
+"Usage: apt-cache [options] command\n"
+"       apt-cache [options] showpkg pkg1 [pkg2 ...]\n"
+"       apt-cache [options] showsrc pkg1 [pkg2 ...]\n"
+"\n"
+"apt-cache is a low-level tool used to query information\n"
+"from APT's binary cache files\n"
+"\n"
+"Commands:\n"
+"   gencaches - Build both the package and source cache\n"
+"   showpkg - Show some general information for a single package\n"
+"   showsrc - Show source records\n"
+"   stats - Show some basic statistics\n"
+"   dump - Show the entire file in a terse form\n"
+"   dumpavail - Print an available file to stdout\n"
+"   unmet - Show unmet dependencies\n"
+"   search - Search the package list for a regex pattern\n"
+"   show - Show a readable record for the package\n"
+"   depends - Show raw dependency information for a package\n"
+"   rdepends - Show reverse dependency information for a package\n"
+"   pkgnames - List the names of all packages in the system\n"
+"   dotty - Generate package graphs for GraphViz\n"
+"   xvcg - Generate package graphs for xvcg\n"
+"   policy - Show policy settings\n"
+"\n"
+"Options:\n"
+"  -h   This help text.\n"
+"  -p=? The package cache.\n"
+"  -s=? The source cache.\n"
+"  -q   Disable progress indicator.\n"
+"  -i   Show only important deps for the unmet command.\n"
+"  -c=? Read this configuration file\n"
+"  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp\n"
+"See the apt-cache(8) and apt.conf(5) manual pages for more information.\n"
+msgstr ""
+
+#: cmdline/apt-cdrom.cc
+msgid "Please provide a name for this Disc, such as 'Debian 5.0.3 Disk 1'"
+msgstr ""
+
+#: cmdline/apt-cdrom.cc:92
+msgid "Please insert a Disc in the drive and press enter"
+msgstr ""
+
+#: cmdline/apt-cdrom.cc
+#, c-format
+msgid "Failed to mount '%s' to '%s'"
+msgstr ""
+
+#: cmdline/apt-cdrom.cc
+msgid "Repeat this process for the rest of the CDs in your set."
+msgstr ""
+
+#: cmdline/apt-config.cc
+msgid "Arguments not in pairs"
+msgstr "Nid yw ymresymiadau mewn parau"
+
+#: cmdline/apt-config.cc:76
+msgid ""
+"Usage: apt-config [options] command\n"
+"\n"
+"apt-config is a simple tool to read the APT config file\n"
+"\n"
+"Commands:\n"
+"   shell - Shell mode\n"
+"   dump - Show the configuration\n"
+"\n"
+"Options:\n"
+"  -h   This help text.\n"
+"  -c=? Read this configuration file\n"
+"  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp\n"
+msgstr ""
+
+#: cmdline/apt-extracttemplates.cc:98
+#, c-format
+msgid "%s not a valid DEB package."
+msgstr "Nid yw %s yn becyn DEB dilys."
+
+#: cmdline/apt-extracttemplates.cc:232
+msgid ""
+"Usage: apt-extracttemplates file1 [file2 ...]\n"
+"\n"
+"apt-extracttemplates is a tool to extract config and template info\n"
+"from debian packages\n"
+"\n"
+"Options:\n"
+"  -h   This help text\n"
+"  -t   Set the temp dir\n"
+"  -c=? Read this configuration file\n"
+"  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp\n"
+msgstr ""
+
+#: cmdline/apt-extracttemplates.cc:267
+#, c-format
+msgid "Unable to write to %s"
+msgstr "Ni ellir ysgrifennu i %s"
+
+#: cmdline/apt-extracttemplates.cc:310
+msgid "Cannot get debconf version. Is debconf installed?"
+msgstr "Ni ellir cael fersiwn debconf. Ydi debconf wedi ei sefydlu?"
+
+#: ftparchive/apt-ftparchive.cc:169 ftparchive/apt-ftparchive.cc:346
+msgid "Package extension list is too long"
+msgstr "Mae'r rhestr estyniad pecyn yn rhy hir."
+
+#: ftparchive/apt-ftparchive.cc:171 ftparchive/apt-ftparchive.cc:188
+#: ftparchive/apt-ftparchive.cc:211 ftparchive/apt-ftparchive.cc:261
+#: ftparchive/apt-ftparchive.cc:275 ftparchive/apt-ftparchive.cc:297
+#, c-format
+msgid "Error processing directory %s"
+msgstr ""
+
+#: ftparchive/apt-ftparchive.cc:259
+msgid "Source extension list is too long"
+msgstr "Mae'r rhestr estyniad ffynhonell yn rhy hir"
+
+#: ftparchive/apt-ftparchive.cc:376
+msgid "Error writing header to contents file"
+msgstr "Gwall wrth ysgrifennu pennawd i'r ffeil cynnwys"
+
+#: ftparchive/apt-ftparchive.cc:406
+#, c-format
+msgid "Error processing contents %s"
+msgstr ""
+
+#: ftparchive/apt-ftparchive.cc:594
+msgid ""
+"Usage: apt-ftparchive [options] command\n"
+"Commands: packages binarypath [overridefile [pathprefix]]\n"
+"          sources srcpath [overridefile [pathprefix]]\n"
+"          contents path\n"
+"          release path\n"
+"          generate config [groups]\n"
+"          clean config\n"
+"\n"
+"apt-ftparchive generates index files for Debian archives. It supports\n"
+"many styles of generation from fully automated to functional replacements\n"
+"for dpkg-scanpackages and dpkg-scansources\n"
+"\n"
+"apt-ftparchive generates Package files from a tree of .debs. The\n"
+"Package file contains the contents of all the control fields from\n"
+"each package as well as the MD5 hash and filesize. An override file\n"
+"is supported to force the value of Priority and Section.\n"
+"\n"
+"Similarly apt-ftparchive generates Sources files from a tree of .dscs.\n"
+"The --source-override option can be used to specify a src override file\n"
+"\n"
+"The 'packages' and 'sources' command should be run in the root of the\n"
+"tree. BinaryPath should point to the base of the recursive search and \n"
+"override file should contain the override flags. Pathprefix is\n"
+"appended to the filename fields if present. Example usage from the \n"
+"Debian archive:\n"
+"   apt-ftparchive packages dists/potato/main/binary-i386/ > \\\n"
+"               dists/potato/main/binary-i386/Packages\n"
+"\n"
+"Options:\n"
+"  -h    This help text\n"
+"  --md5 Control MD5 generation\n"
+"  -s=?  Source override file\n"
+"  -q    Quiet\n"
+"  -d=?  Select the optional caching database\n"
+"  --no-delink Enable delinking debug mode\n"
+"  --contents  Control contents file generation\n"
+"  -c=?  Read this configuration file\n"
+"  -o=?  Set an arbitrary configuration option"
+msgstr ""
+
+#: ftparchive/apt-ftparchive.cc:800
+msgid "No selections matched"
+msgstr "Dim dewisiadau'n cyfateb"
+
+#: ftparchive/apt-ftparchive.cc:878
+#, c-format
+msgid "Some files are missing in the package file group `%s'"
+msgstr "Mae rhai ffeiliau ar goll yn y grŵp ffeiliau pecyn  `%s'"
+
+#: ftparchive/cachedb.cc:43
+#, c-format
+msgid "DB was corrupted, file renamed to %s.old"
+msgstr "Llygrwyd y cronfa data, ailenwyd y ffeil i %s.old"
+
+#: ftparchive/cachedb.cc:61
+#, c-format
+msgid "DB is old, attempting to upgrade %s"
+msgstr "Hen gronfa data, yn ceisio uwchraddio %s"
+
+#: ftparchive/cachedb.cc:72
+msgid ""
+"DB format is invalid. If you upgraded from an older version of apt, please "
+"remove and re-create the database."
+msgstr ""
+
+#: ftparchive/cachedb.cc:77
+#, c-format
+msgid "Unable to open DB file %s: %s"
+msgstr "Ni ellir agor y ffeil DB2 %s: %s"
+
+#: methods/rred.cc
+#, c-format
+msgid "Failed to stat %s"
+msgstr "Methodd stat() o %s"
+
+#: ftparchive/cachedb.cc:238
+msgid "Archive has no control record"
+msgstr "Does dim cofnod rheoli gan yr archif"
+
+#: ftparchive/cachedb.cc:444
+msgid "Unable to get a cursor"
+msgstr "Ni ellir cael cyrchydd"
+
+#: ftparchive/writer.cc:73
+#, c-format
+msgid "W: Unable to read directory %s\n"
+msgstr "Rh: Ni ellir darllen y cyfeiriadur %s\n"
+
+#: ftparchive/writer.cc:78
+#, c-format
+msgid "W: Unable to stat %s\n"
+msgstr "Rh: Ni ellir gwneud stat() o %s\n"
+
+#: ftparchive/writer.cc:134
+msgid "E: "
+msgstr "G: "
+
+#: ftparchive/writer.cc:136
+msgid "W: "
+msgstr "Rh: "
+
+#: ftparchive/writer.cc:143
+msgid "E: Errors apply to file "
+msgstr "G: Mae gwallau yn cymhwyso i'r ffeil "
+
+#: ftparchive/writer.cc:161 ftparchive/writer.cc:193
+#, c-format
+msgid "Failed to resolve %s"
+msgstr "Methwyd datrys %s"
+
+#: ftparchive/writer.cc:174
+msgid "Tree walking failed"
+msgstr "Methwyd cerdded y goeden"
+
+#: ftparchive/writer.cc:201
+#, c-format
+msgid "Failed to open %s"
+msgstr "Methwyd agor %s"
+
+# FIXME
+#: ftparchive/writer.cc:260
+#, c-format
+msgid " DeLink %s [%s]\n"
+msgstr " DatGysylltu %s [%s]\n"
+
+#: ftparchive/writer.cc:268
+#, c-format
+msgid "Failed to readlink %s"
+msgstr "Methwyd darllen y cyswllt %s"
+
+#: ftparchive/writer.cc:272
+#, c-format
+msgid "Failed to unlink %s"
+msgstr "Methwyd datgysylltu %s"
+
+#: ftparchive/writer.cc:279
+#, c-format
+msgid "*** Failed to link %s to %s"
+msgstr "*** Methwyd cysylltu %s at %s"
+
+#: ftparchive/writer.cc:289
+#, c-format
+msgid " DeLink limit of %sB hit.\n"
+msgstr " Tarwyd y terfyn cyswllt %sB.\n"
+
+#: ftparchive/writer.cc:392
+msgid "Archive had no package field"
+msgstr "Doedd dim maes pecyn gan yr archif"
+
+#: ftparchive/writer.cc:400 ftparchive/writer.cc:687
+#, c-format
+msgid "  %s has no override entry\n"
+msgstr "  Does dim cofnod gwrthwneud gan %s\n"
+
+#: ftparchive/writer.cc:463 ftparchive/writer.cc:790
+#, c-format
+msgid "  %s maintainer is %s not %s\n"
+msgstr "  Cynaliwr %s yw %s nid %s\n"
+
+#: ftparchive/writer.cc:697
+#, c-format
+msgid "  %s has no source override entry\n"
+msgstr ""
+
+#: ftparchive/writer.cc:701
+#, c-format
+msgid "  %s has no binary override entry either\n"
+msgstr ""
+
+#: ftparchive/contents.cc:362 ftparchive/contents.cc:393
+msgid "realloc - Failed to allocate memory"
+msgstr "realloc - Methwyd neilltuo cof"
+
+#: ftparchive/override.cc:34 ftparchive/override.cc:142
+#, c-format
+msgid "Unable to open %s"
+msgstr "Ni ellir agor %s"
+
+#: ftparchive/override.cc:60 ftparchive/override.cc:166
+#, c-format
+msgid "Malformed override %s line %llu #1"
+msgstr ""
+
+#: ftparchive/override.cc:74 ftparchive/override.cc:178
+#, c-format
+msgid "Malformed override %s line %llu #2"
+msgstr ""
+
+#: ftparchive/override.cc:88 ftparchive/override.cc:191
+#, c-format
+msgid "Malformed override %s line %llu #3"
+msgstr ""
+
+#: ftparchive/override.cc:127 ftparchive/override.cc:201
+#, c-format
+msgid "Failed to read the override file %s"
+msgstr "Methwydd darllen y ffeil dargyfeirio %s"
+
+#: ftparchive/multicompress.cc:73
+#, c-format
+msgid "Unknown compression algorithm '%s'"
+msgstr ""
+
+#: ftparchive/multicompress.cc:103
+#, c-format
+msgid "Compressed output %s needs a compression set"
+msgstr "Mae'r allbwn cywasgiedig %s angen cywasgiad wedi ei osod"
+
+#: methods/rsh.cc
+msgid "Failed to create IPC pipe to subprocess"
+msgstr "Methwyd creu pibell cyfathrebu at isbroses"
+
+#: ftparchive/multicompress.cc:196
+msgid "Failed to create FILE*"
+msgstr "Methwyd creu FILE*"
+
+#: ftparchive/multicompress.cc:199
+msgid "Failed to fork"
+msgstr "Methodd fork()"
+
+#: ftparchive/multicompress.cc:213
+msgid "Compress child"
+msgstr ""
+
+#: ftparchive/multicompress.cc:236
+#, c-format
+msgid "Internal error, failed to create %s"
+msgstr ""
+
+#: ftparchive/multicompress.cc:404
+msgid "IO to subprocess/file failed"
+msgstr "Methodd MA i isbroses/ffeil"
+
+#: ftparchive/multicompress.cc:456
+msgid "Failed to read while computing MD5"
+msgstr "Methwyd darllen wrth gyfrifo MD5"
+
+#: ftparchive/multicompress.cc:473
+#, c-format
+msgid "Problem unlinking %s"
+msgstr "Gwall wrth datgysylltu %s"
+
+#: ftparchive/multicompress.cc:488
+#, c-format
+msgid "Failed to rename %s to %s"
+msgstr "Methwyd ailenwi %s at %s"
+
+#. TRANSLATOR: "Yes" answer printed for a yes/no question if --assume-yes is set
+#: apt-private/private-output.cc
+msgid "Y"
+msgstr "I"
+
+#. TRANSLATOR: "No" answer printed for a yes/no question if --assume-no is set
+#: apt-private/private-output.cc
+msgid "N"
+msgstr ""
+
+#: apt-private/private-output.cc
+#, c-format
+msgid "Regex compilation error - %s"
+msgstr "Gwall crynhoi patrwm - %s"
+
+#: apt-private/private-output.cc
+msgid "The following packages have unmet dependencies:"
+msgstr "Mae gan y pecynnau canlynol ddibyniaethau heb eu bodloni:"
+
+#: apt-private/private-output.cc
+#, c-format
+msgid "but %s is installed"
+msgstr "ond mae %s wedi ei sefydlu"
+
+#: apt-private/private-output.cc
+#, c-format
+msgid "but %s is to be installed"
+msgstr "ond mae %s yn mynd i gael ei sefydlu"
+
+#: apt-private/private-output.cc
+msgid "but it is not installable"
+msgstr "ond ni ellir ei sefydlu"
+
+#: apt-private/private-output.cc
+msgid "but it is a virtual package"
+msgstr "ond mae'n becyn rhithwir"
+
+#: apt-private/private-output.cc
+msgid "but it is not installed"
+msgstr "ond nid yw wedi ei sefydlu"
+
+#: apt-private/private-output.cc
+msgid "but it is not going to be installed"
+msgstr "ond nid yw'n mynd i gael ei sefydlu"
+
+#: apt-private/private-output.cc
+msgid " or"
+msgstr " neu"
+
+#: apt-private/private-output.cc
+msgid "The following NEW packages will be installed:"
+msgstr "Caiff y pecynnau NEWYDD canlynol eu sefydlu:"
+
+#: apt-private/private-output.cc
+msgid "The following packages will be REMOVED:"
+msgstr "Caiff y pecynnau canlynol eu TYNNU:"
+
+#: apt-private/private-output.cc
+msgid "The following packages have been kept back:"
+msgstr ""
+
+#: apt-private/private-output.cc
+msgid "The following packages will be upgraded:"
+msgstr ""
+
+#: apt-private/private-output.cc
+msgid "The following packages will be DOWNGRADED:"
+msgstr ""
+
+#: apt-private/private-output.cc
+msgid "The following held packages will be changed:"
+msgstr "Caiff y pecynnau wedi eu dal canlynol eu newid:"
+
+#: cmdline/apt-get.cc:545
+#, c-format
+msgid "%s (due to %s) "
+msgstr "%s (oherwydd %s) "
+
+#: apt-private/private-output.cc
+msgid ""
+"WARNING: The following essential packages will be removed.\n"
+"This should NOT be done unless you know exactly what you are doing!"
+msgstr ""
+
+#: apt-private/private-output.cc
+#, c-format
+msgid "%lu upgraded, %lu newly installed, "
+msgstr "%lu wedi uwchraddio, %lu newydd eu sefydlu, "
+
+#: apt-private/private-output.cc
+#, c-format
+msgid "%lu reinstalled, "
+msgstr "%lu wedi ailsefydlu, "
+
+#: apt-private/private-output.cc
+#, c-format
+msgid "%lu downgraded, "
+msgstr "%lu wedi eu israddio, "
+
+#: apt-private/private-output.cc
+#, c-format
+msgid "%lu to remove and %lu not upgraded.\n"
+msgstr "%lu i'w tynnu a %lu heb eu uwchraddio.\n"
+
+#: apt-private/private-output.cc
+#, c-format
+msgid "%lu not fully installed or removed.\n"
+msgstr "%lu  heb eu sefydlu na tynnu'n gyflawn.\n"
+
+#: apt-private/private-cacheset.cc
+#, c-format
+msgid "Note, selecting '%s' for task '%s'\n"
+msgstr ""
+
+#: apt-private/private-cacheset.cc
+#, c-format
+msgid "Note, selecting '%s' for regex '%s'\n"
+msgstr ""
+
+#: apt-private/private-cacheset.cc
+#, c-format
+msgid "Package %s is a virtual package provided by:\n"
+msgstr "Mae'r pecyn %s yn becyn rhithwir a ddarparir gan:\n"
+
+#: apt-private/private-cacheset.cc
+msgid " [Installed]"
+msgstr " [Sefydliwyd]"
+
+#: apt-private/private-cacheset.cc
+msgid " [Not candidate version]"
+msgstr ""
+
+#: apt-private/private-cacheset.cc
+msgid "You should explicitly select one to install."
+msgstr "Dylech ddewis un yn benodol i'w sefydlu."
+
+#: apt-private/private-cacheset.cc
+#, c-format
+msgid ""
+"Package %s is not available, but is referred to by another package.\n"
+"This may mean that the package is missing, has been obsoleted, or\n"
+"is only available from another source\n"
+msgstr ""
+
+#: apt-private/private-cacheset.cc
+msgid "However the following packages replace it:"
+msgstr "Fodd bynnag, mae'r pecynnau canlynol yn cymryd ei le:"
+
+#: apt-private/private-cacheset.cc
+#, c-format
+msgid "Package '%s' has no installation candidate"
+msgstr ""
+
+#: apt-private/private-cacheset.cc
+#, c-format
+msgid "Virtual packages like '%s' can't be removed\n"
+msgstr ""
+
+#: apt-private/private-cacheset.cc
+#, c-format
+msgid "Note, selecting '%s' instead of '%s'\n"
+msgstr ""
+
+#: apt-private/private-install.cc
+#, c-format
+msgid "Skipping %s, it is already installed and upgrade is not set.\n"
+msgstr ""
+"Yn hepgor %s, mae wedi ei sefydlu a nid yw uwchraddio wedi ei osod.\n"
+
+#: apt-private/private-install.cc
+#, c-format
+msgid "Skipping %s, it is not installed and only upgrades are requested.\n"
+msgstr ""
+
+#: apt-private/private-install.cc
+#, c-format
+msgid "Reinstallation of %s is not possible, it cannot be downloaded.\n"
+msgstr "Nid yw ailsefydlu %s yn bosib, gan ni ellir ei lawrlwytho.\n"
+
+#: cmdline/apt-get.cc:1205
+#, c-format
+msgid "%s is already the newest version.\n"
+msgstr "Mae %s y fersiwn mwyaf newydd eisioes.\n"
+
+#: apt-private/private-install.cc cmdline/apt-get.cc cmdline/apt-mark.cc
+#, c-format
+msgid "%s set to manually installed.\n"
+msgstr ""
+
+#: apt-private/private-install.cc
+#, c-format
+msgid "Selected version '%s' (%s) for '%s'\n"
+msgstr ""
+
+#: apt-private/private-install.cc
+#, c-format
+msgid "Selected version '%s' (%s) for '%s' because of '%s'\n"
+msgstr ""
+
+#: cmdline/apt-get.cc:1122
+#, c-format
+msgid "Package %s is not installed, so not removed\n"
+msgstr "Nid yw'r pecyn %s wedi ei sefydlu, felly ni chaif ei dynnu\n"
+
+#: apt-private/private-cachefile.cc
+msgid "Correcting dependencies..."
+msgstr "Yn cywiro dibyniaethau..."
+
+#: apt-private/private-cachefile.cc
+msgid " failed."
+msgstr " wedi methu."
+
+#: apt-private/private-cachefile.cc
+msgid "Unable to correct dependencies"
+msgstr "Ni ellir cywiro dibyniaethau"
+
+#: apt-private/private-cachefile.cc
+msgid "Unable to minimize the upgrade set"
+msgstr "Ni ellir bychanu y set uwchraddio"
+
+#: apt-private/private-cachefile.cc
+msgid " Done"
+msgstr " Wedi Gorffen"
+
+#: apt-private/private-cachefile.cc
+msgid "You might want to run 'apt-get -f install' to correct these."
+msgstr "Efallai hoffech rhedeg 'apt-get -f install' er mwyn cywiro'r rhain."
+
+#: apt-private/private-cachefile.cc
+msgid "Unmet dependencies. Try using -f."
+msgstr "Dibyniaethau heb eu bodloni. Ceisiwch ddefnyddio -f."
+
+#: apt-private/private-download.cc
+msgid "WARNING: The following packages cannot be authenticated!"
+msgstr ""
+
+#: apt-private/private-download.cc
+msgid "Authentication warning overridden.\n"
+msgstr ""
+
+#: cmdline/apt-get.cc:709
+msgid "Install these packages without verification [y/N]? "
+msgstr ""
+
+#: apt-private/private-download.cc
+msgid "Some packages could not be authenticated"
+msgstr ""
+
+#: cmdline/apt-get.cc:720 cmdline/apt-get.cc:897
+msgid "There are problems and -y was used without --force-yes"
+msgstr "Mae problemau a defnyddwyd -y heb --force-yes"
+
+#: apt-private/private-install.cc
+msgid "Internal error, InstallPackages was called with broken packages!"
+msgstr ""
+
+#: apt-private/private-install.cc
+msgid "Packages need to be removed but remove is disabled."
+msgstr ""
+
+#: apt-private/private-install.cc
+msgid "Internal error, Ordering didn't finish"
+msgstr ""
+
+#: cmdline/apt-get.cc:843
+msgid "How odd.. The sizes didn't match, email apt@packages.debian.org"
+msgstr ""
+
+#. TRANSLATOR: The required space between number and unit is already included
+#. in the replacement strings, so %sB will be correctly translate in e.g. 1,5 MB
+#: apt-private/private-install.cc
+#, c-format
+msgid "Need to get %sB/%sB of archives.\n"
+msgstr "Mae angeyn cyrchu %sB/%sB o archifau.\n"
+
+#. TRANSLATOR: The required space between number and unit is already included
+#. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
+#: apt-private/private-install.cc
+#, c-format
+msgid "Need to get %sB of archives.\n"
+msgstr "Mae angen cyrchu %sB o archifau.\n"
+
+#. TRANSLATOR: The required space between number and unit is already included
+#. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
+#: apt-private/private-install.cc
+#, c-format
+msgid "After this operation, %sB of additional disk space will be used.\n"
+msgstr ""
+
+#. TRANSLATOR: The required space between number and unit is already included
+#. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
+#: apt-private/private-install.cc
+#, c-format
+msgid "After this operation, %sB disk space will be freed.\n"
+msgstr ""
+
+#: apt-private/private-download.cc
+#, c-format
+msgid "Couldn't determine free space in %s"
+msgstr ""
+
+#: apt-private/private-download.cc
+#, c-format
+msgid "You don't have enough free space in %s."
+msgstr "Does dim digon o le rhydd gennych yn %s."
+
+#: apt-private/private-install.cc
+msgid "Trivial Only specified but this is not a trivial operation."
+msgstr "Penodwyd Syml Yn Unig ond nid yw hyn yn weithred syml."
+
+#. TRANSLATOR: This string needs to be typed by the user as a confirmation, so be
+#. careful with hard to type or special characters (like non-breaking spaces)
+#: apt-private/private-install.cc
+msgid "Yes, do as I say!"
+msgstr "Ie, gwna fel rydw i'n dweud!"
+
+#: apt-private/private-install.cc
+#, c-format
+msgid ""
+"You are about to do something potentially harmful.\n"
+"To continue type in the phrase '%s'\n"
+" ?] "
+msgstr ""
+
+#: apt-private/private-install.cc
+msgid "Abort."
+msgstr "Erthylu."
+
+#: cmdline/apt-get.cc:928
+msgid "Do you want to continue [Y/n]? "
+msgstr ""
+
+#: apt-private/private-download.cc
+#, c-format
+msgid "Failed to fetch %s  %s\n"
+msgstr "Methwyd cyrchu %s  %s\n"
+
+#: apt-private/private-install.cc
+msgid "Some files failed to download"
+msgstr "Methodd rhai ffeiliau lawrlwytho"
+
+#: apt-private/private-install.cc apt-private/private-source.cc
+msgid "Download complete and in download only mode"
+msgstr "Lawrlwytho yn gyflawn ac yn y modd lawrlwytho'n unig"
+
+#: apt-private/private-install.cc
+msgid ""
+"Unable to fetch some archives, maybe run apt-get update or try with --fix-"
+"missing?"
+msgstr ""
+"Ni ellir cyrchu rhai archifau, efallai dylwch rhedeg apt-get update, neu "
+"geidio defnyddio --fix-missing?"
+
+#: apt-private/private-install.cc
+msgid "--fix-missing and media swapping is not currently supported"
+msgstr "Ni chynhelir cyfnewid cyfrwng efo --fix-missing ar hyn o bryd"
+
+#: apt-private/private-install.cc
+msgid "Unable to correct missing packages."
+msgstr "Ni ellir cywiro pecynnau ar goll."
+
+#: apt-private/private-install.cc
+msgid "Aborting install."
+msgstr ""
+
+#: apt-private/private-install.cc
+msgid ""
+"The following package disappeared from your system as\n"
+"all files have been overwritten by other packages:"
+msgid_plural ""
+"The following packages disappeared from your system as\n"
+"all files have been overwritten by other packages:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cmdline/apt-get.cc:1367
+msgid "Note: This is done automatic and on purpose by dpkg."
+msgstr ""
+
+#: cmdline/apt-get.cc:1342
+#, c-format
+msgid "Ignore unavailable target release '%s' of package '%s'"
+msgstr ""
+
+#: apt-private/private-source.cc
+#, c-format
+msgid "Picking '%s' as source package instead of '%s'\n"
+msgstr ""
+
+#. if (VerTag.empty() == false && Last == 0)
+#: cmdline/apt-get.cc:1412
+#, c-format
+msgid "Ignore unavailable version '%s' of package '%s'"
+msgstr ""
+
+#: apt-private/private-update.cc
+msgid "The update command takes no arguments"
+msgstr "Nid yw'r gorchymyn diweddaru yn derbyn ymresymiadau"
+
+#: apt-private/private-install.cc
+msgid "We are not supposed to delete stuff, can't start AutoRemover"
+msgstr ""
+
+#: apt-private/private-install.cc
+msgid ""
+"Hmm, seems like the AutoRemover destroyed something which really\n"
+"shouldn't happen. Please file a bug report against apt."
+msgstr ""
+
+#. 
+#. if (Packages == 1)
+#. {
+#. c1out << std::endl;
+#. c1out <<
+#. _("Since you only requested a single operation it is extremely likely that\n"
+#. "the package is simply not installable and a bug report against\n"
+#. "that package should be filed.") << std::endl;
+#. }
+#. 
+#: apt-private/private-install.cc
+msgid "The following information may help to resolve the situation:"
+msgstr "Gall y wybodaeth canlynol gynorthwyo'n datrys y sefyllfa:"
+
+#: apt-private/private-install.cc
+msgid "Internal Error, AutoRemover broke stuff"
+msgstr ""
+
+#: apt-private/private-install.cc
+msgid ""
+"The following package was automatically installed and is no longer required:"
+msgid_plural ""
+"The following packages were automatically installed and are no longer "
+"required:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: apt-private/private-install.cc
+#, c-format
+msgid "%lu package was automatically installed and is no longer required.\n"
+msgid_plural ""
+"%lu packages were automatically installed and are no longer required.\n"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cmdline/apt-get.cc:1549
+msgid "Use 'apt-get autoremove' to remove them."
+msgstr ""
+
+#: cmdline/apt-get.cc:1580
+msgid "Internal error, AllUpgrade broke stuff"
+msgstr ""
+
+#: apt-private/private-install.cc
+msgid "You might want to run 'apt-get -f install' to correct these:"
+msgstr "Efallai hoffech rhedeg 'apt-get -f install' er mwyn cywiro'r rhain:"
+
+# FIXME
+#: apt-private/private-install.cc
+msgid ""
+"Unmet dependencies. Try 'apt-get -f install' with no packages (or specify a "
+"solution)."
+msgstr ""
+"Dibyniaethau heb eu bodloni. Ceisiwch rhedeg 'apt-get -f install' efo dim "
+"pecyn (neu penodwch ddatrys)"
+
+# FIXME: needs commas
+#: apt-private/private-install.cc
+msgid ""
+"Some packages could not be installed. This may mean that you have\n"
+"requested an impossible situation or if you are using the unstable\n"
+"distribution that some required packages have not yet been created\n"
+"or been moved out of Incoming."
+msgstr ""
+"Methwyd sefydlu rhai pecynnau. Gall hyn olygu eich bod chi wedi gofyn\n"
+"am sefyllfa amhosib neu, os ydych chi'n defnyddio'r dosraniad\n"
+"ansefydlog, fod rhai pecynnau angenrheidiol heb gael eu creu eto neu\n"
+"heb gael eu symud allan o Incoming."
+
+#: apt-private/private-install.cc
+msgid "Broken packages"
+msgstr "Pecynnau wedi torri"
+
+#: cmdline/apt-get.cc:1880
+msgid "The following extra packages will be installed:"
+msgstr "Caiff y pecynnau canlynol ychwanegol eu sefydlu:"
+
+#: apt-private/private-install.cc
+msgid "Suggested packages:"
+msgstr "Pecynnau a awgrymmir:"
+
+#: apt-private/private-install.cc
+msgid "Recommended packages:"
+msgstr "Pecynnau a argymhellir:"
+
+#: cmdline/apt-get.cc
+#, c-format
+msgid "Couldn't find package %s"
+msgstr "Methwyd canfod pecyn %s"
+
+#: cmdline/apt-get.cc cmdline/apt-mark.cc
+#, c-format
+msgid "%s set to automatically installed.\n"
+msgstr ""
+
+#: cmdline/apt-get.cc cmdline/apt-mark.cc
+msgid ""
+"This command is deprecated. Please use 'apt-mark auto' and 'apt-mark manual' "
+"instead."
+msgstr ""
+
+#: cmdline/apt-get.cc:1999
+msgid "Calculating upgrade... "
+msgstr ""
+
+#: methods/connect.cc methods/ftp.cc methods/rsh.cc
+msgid "Failed"
+msgstr "Methwyd"
+
+#: cmdline/apt-get.cc:2007
+msgid "Done"
+msgstr "Wedi Gorffen"
+
+#: cmdline/apt-get.cc
+msgid "Internal error, problem resolver broke stuff"
+msgstr ""
+
+#: apt-private/private-download.cc
+msgid "Unable to lock the download directory"
+msgstr "Ni ellir cloi'r cyfeiriadur lawrlwytho"
+
+#: cmdline/apt-get.cc:2294
+#, c-format
+msgid "Downloading %s %s"
+msgstr ""
+
+#: apt-private/private-source.cc
+msgid "Must specify at least one package to fetch source for"
+msgstr "Rhaid penodi o leiaf un pecyn i gyrchi ffynhonell ar ei gyfer"
+
+#: apt-private/private-source.cc
+#, c-format
+msgid "Unable to find a source package for %s"
+msgstr "Ni ellir canfod pecyn ffynhonell ar gyfer %s"
+
+#: apt-private/private-source.cc
+#, c-format
+msgid ""
+"NOTICE: '%s' packaging is maintained in the '%s' version control system at:\n"
+"%s\n"
+msgstr ""
+
+#: cmdline/apt-get.cc:2443
+#, c-format
+msgid ""
+"Please use:\n"
+"bzr branch %s\n"
+"to retrieve the latest (possibly unreleased) updates to the package.\n"
+msgstr ""
+
+#: apt-private/private-source.cc
+#, c-format
+msgid "Skipping already downloaded file '%s'\n"
+msgstr ""
+
+#: cmdline/apt-get.cc:2332
+#, c-format
+msgid "You don't have enough free space in %s"
+msgstr "Does dim digon o le rhydd yn %s gennych"
+
+#. TRANSLATOR: The required space between number and unit is already included
+#. in the replacement strings, so %sB will be correctly translate in e.g. 1,5 MB
+#: apt-private/private-source.cc
+#, c-format
+msgid "Need to get %sB/%sB of source archives.\n"
+msgstr "Rhaid cyrchu %sB/%sB o archifau ffynhonell.\n"
+
+#. TRANSLATOR: The required space between number and unit is already included
+#. in the replacement string, so %sB will be correctly translate in e.g. 1,5 MB
+#: apt-private/private-source.cc
+#, c-format
+msgid "Need to get %sB of source archives.\n"
+msgstr "Rhaid cyrchu %sB o archifau ffynhonell.\n"
+
+#: apt-private/private-source.cc
+#, c-format
+msgid "Fetch source %s\n"
+msgstr ""
+
+#: apt-private/private-source.cc
+msgid "Failed to fetch some archives."
+msgstr "Methwyd cyrchu rhai archifau."
+
+#: apt-private/private-source.cc
+#, c-format
+msgid "Skipping unpack of already unpacked source in %s\n"
+msgstr "Yn hepgor dadbacio y ffynhonell wedi ei dadbacio eisioes yn %s\n"
+
+#: apt-private/private-source.cc
+#, c-format
+msgid "Unpack command '%s' failed.\n"
+msgstr "Methodd y gorchymyn dadbacio '%s'.\n"
+
+#: apt-private/private-source.cc
+#, c-format
+msgid "Check if the 'dpkg-dev' package is installed.\n"
+msgstr ""
+
+#: apt-private/private-source.cc
+#, c-format
+msgid "Build command '%s' failed.\n"
+msgstr "Methodd y gorchymyn adeiladu '%s'.\n"
+
+#: cmdline/apt-get.cc:2459
+msgid "Child process failed"
+msgstr "Methodd proses plentyn"
+
+#: apt-private/private-source.cc
+msgid "Must specify at least one package to check builddeps for"
+msgstr ""
+"Rhaid penodi o leiaf un pecyn i wirio dibyniaethau adeiladu ar eu cyfer"
+
+#: apt-private/private-source.cc
+#, c-format
+msgid ""
+"No architecture information available for %s. See apt.conf(5) "
+"APT::Architectures for setup"
+msgstr ""
+
+#: apt-private/private-source.cc
+#, c-format
+msgid "Unable to get build-dependency information for %s"
+msgstr "Ni ellir cyrchu manylion dibyniaeth adeiladu ar gyfer %s"
+
+#: apt-private/private-source.cc
+#, c-format
+msgid "%s has no build depends.\n"
+msgstr "Nid oes dibyniaethau adeiladu gan %s.\n"
+
+#: cmdline/apt-get.cc:2888
+#, c-format
+msgid ""
+"%s dependency for %s can't be satisfied because %s is not allowed on '%s' "
+"packages"
+msgstr ""
+
+#: cmdline/apt-get.cc:2575
+#, c-format
+msgid ""
+"%s dependency for %s cannot be satisfied because the package %s cannot be "
+"found"
+msgstr ""
+"Ni ellir bodloni dibyniaeth %s ar gyfer %s oherwydd ni ellir canfod y pecyn "
+"%s"
+
+#: cmdline/apt-get.cc:2664
+#, c-format
+msgid ""
+"Failed to satisfy %s dependency for %s: Installed package %s is too new"
+msgstr ""
+"Methwyd bodloni dibynniaeth %s am %s: Mae'r pecyn sefydliedig %s yn rhy "
+"newydd"
+
+#: cmdline/apt-get.cc:2971
+#, c-format
+msgid ""
+"%s dependency for %s cannot be satisfied because candidate version of "
+"package %s can't satisfy version requirements"
+msgstr ""
+
+#: cmdline/apt-get.cc:2977
+#, c-format
+msgid ""
+"%s dependency for %s cannot be satisfied because package %s has no candidate "
+"version"
+msgstr ""
+
+#: cmdline/apt-get.cc:2691
+#, c-format
+msgid "Failed to satisfy %s dependency for %s: %s"
+msgstr "Methwyd bodloni dibyniaeth %s am %s: %s"
+
+#: cmdline/apt-get.cc:2707
+#, c-format
+msgid "Build-dependencies for %s could not be satisfied."
+msgstr "Methwyd bodloni'r dibyniaethau adeiladu ar gyfer %s."
+
+#: apt-private/private-source.cc
+msgid "Failed to process build dependencies"
+msgstr "Methwyd prosesu dibyniaethau adeiladu"
+
+#: cmdline/apt-get.cc:2977 cmdline/apt-get.cc:2989
+#, c-format
+msgid "Changelog for %s (%s)"
+msgstr ""
+
+#: cmdline/apt-get.cc
+msgid "Supported modules:"
+msgstr ""
+
+#: cmdline/apt-get.cc:3289
+msgid ""
+"Usage: apt-get [options] command\n"
+"       apt-get [options] install|remove pkg1 [pkg2 ...]\n"
+"       apt-get [options] source pkg1 [pkg2 ...]\n"
+"\n"
+"apt-get is a simple command line interface for downloading and\n"
+"installing packages. The most frequently used commands are update\n"
+"and install.\n"
+"\n"
+"Commands:\n"
+"   update - Retrieve new lists of packages\n"
+"   upgrade - Perform an upgrade\n"
+"   install - Install new packages (pkg is libc6 not libc6.deb)\n"
+"   remove - Remove packages\n"
+"   autoremove - Remove automatically all unused packages\n"
+"   purge - Remove packages and config files\n"
+"   source - Download source archives\n"
+"   build-dep - Configure build-dependencies for source packages\n"
+"   dist-upgrade - Distribution upgrade, see apt-get(8)\n"
+"   dselect-upgrade - Follow dselect selections\n"
+"   clean - Erase downloaded archive files\n"
+"   autoclean - Erase old downloaded archive files\n"
+"   check - Verify that there are no broken dependencies\n"
+"   changelog - Download and display the changelog for the given package\n"
+"   download - Download the binary package into the current directory\n"
+"\n"
+"Options:\n"
+"  -h  This help text.\n"
+"  -q  Loggable output - no progress indicator\n"
+"  -qq No output except for errors\n"
+"  -d  Download only - do NOT install or unpack archives\n"
+"  -s  No-act. Perform ordering simulation\n"
+"  -y  Assume Yes to all queries and do not prompt\n"
+"  -f  Attempt to correct a system with broken dependencies in place\n"
+"  -m  Attempt to continue if archives are unlocatable\n"
+"  -u  Show a list of upgraded packages as well\n"
+"  -b  Build the source package after fetching it\n"
+"  -V  Show verbose version numbers\n"
+"  -c=? Read this configuration file\n"
+"  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp\n"
+"See the apt-get(8), sources.list(5) and apt.conf(5) manual\n"
+"pages for more information and options.\n"
+"                       This APT has Super Cow Powers.\n"
+msgstr ""
+
+#: apt-private/private-main.cc
+msgid ""
+"NOTE: This is only a simulation!\n"
+"      apt-get needs root privileges for real execution.\n"
+"      Keep also in mind that locking is deactivated,\n"
+"      so don't depend on the relevance to the real current situation!"
+msgstr ""
+
+#: cmdline/acqprogress.cc:55
+msgid "Hit "
+msgstr "Presennol "
+
+#: cmdline/acqprogress.cc:79
+msgid "Get:"
+msgstr "Cyrchu:"
+
+#: cmdline/acqprogress.cc:110
+msgid "Ign "
+msgstr "Anwybyddu "
+
+#: cmdline/acqprogress.cc:114
+msgid "Err "
+msgstr "Gwall "
+
+#: apt-private/acqprogress.cc
+#, c-format
+msgid "Fetched %sB in %s (%sB/s)\n"
+msgstr "Cyrchwyd %sB yn %s (%sB/s)\n"
+
+#: apt-private/acqprogress.cc
+msgid " [Working]"
+msgstr " [Gweithio]"
+
+#: cmdline/acqprogress.cc:271
+#, c-format
+msgid ""
+"Media change: please insert the disc labeled\n"
+" '%s'\n"
+"in the drive '%s' and press enter\n"
+msgstr ""
+
+#: cmdline/apt-internal-solver.cc:34
+msgid ""
+"Usage: apt-internal-resolver\n"
+"\n"
+"apt-internal-resolver is an interface to use the current internal\n"
+"like an external resolver for the APT family for debugging or alike\n"
+"\n"
+"Options:\n"
+"  -h  This help text.\n"
+"  -q  Loggable output - no progress indicator\n"
+"  -c=? Read this configuration file\n"
+"  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp\n"
+"apt.conf(5) manual pages for more information and options.\n"
+"                       This APT has Super Cow Powers.\n"
+msgstr ""
+
+#: cmdline/apt-mark.cc
+#, c-format
+msgid "%s can not be marked as it is not installed.\n"
+msgstr ""
+
+#: cmdline/apt-mark.cc
+#, c-format
+msgid "%s was already set to manually installed.\n"
+msgstr ""
+
+#: cmdline/apt-mark.cc
+#, c-format
+msgid "%s was already set to automatically installed.\n"
+msgstr ""
+
+#: cmdline/apt-mark.cc
+#, c-format
+msgid "%s was already set on hold.\n"
+msgstr ""
+
+#: cmdline/apt-mark.cc
+#, c-format
+msgid "%s was already not hold.\n"
+msgstr ""
+
+#: cmdline/apt-mark.cc
+#, c-format
+msgid "%s set on hold.\n"
+msgstr ""
+
+#: cmdline/apt-mark.cc
+#, c-format
+msgid "Canceled hold on %s.\n"
+msgstr ""
+
+#: cmdline/apt-mark.cc
+msgid "Executing dpkg failed. Are you root?"
+msgstr ""
+
+#: cmdline/apt-mark.cc:268
+msgid ""
+"Usage: apt-mark [options] {auto|manual} pkg1 [pkg2 ...]\n"
+"\n"
+"apt-mark is a simple command line interface for marking packages\n"
+"as manual or automatical installed. It can also list marks.\n"
+"\n"
+"Commands:\n"
+"   auto - Mark the given packages as automatically installed\n"
+"   manual - Mark the given packages as manually installed\n"
+"\n"
+"Options:\n"
+"  -h  This help text.\n"
+"  -q  Loggable output - no progress indicator\n"
+"  -qq No output except for errors\n"
+"  -s  No-act. Just prints what would be done.\n"
+"  -f  read/write auto/manual marking in the given file\n"
+"  -c=? Read this configuration file\n"
+"  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp\n"
+"See the apt-mark(8) and apt.conf(5) manual pages for more information."
+msgstr ""
+
+#: cmdline/apt-sortpkgs.cc:86
+msgid "Unknown package record!"
+msgstr "Cofnod pecyn anhysbys!"
+
+#: cmdline/apt-sortpkgs.cc:150
+msgid ""
+"Usage: apt-sortpkgs [options] file1 [file2 ...]\n"
+"\n"
+"apt-sortpkgs is a simple tool to sort package files. The -s option is used\n"
+"to indicate what kind of file it is.\n"
+"\n"
+"Options:\n"
+"  -h   This help text\n"
+"  -s   Use source file sorting\n"
+"  -c=? Read this configuration file\n"
+"  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp\n"
+msgstr ""
+
+#: dselect/install:33
+msgid "Bad default setting!"
+msgstr "Rhagosodiad gwael!"
+
+#: dselect/install:51 dselect/install:83 dselect/install:87 dselect/install:94
+#: dselect/install:105 dselect/update:45
+msgid "Press enter to continue."
+msgstr "Gwasgwch Enter er mwyn mynd ymlaen."
+
+#: dselect/install:92
+msgid "Do you want to erase any previously downloaded .deb files?"
+msgstr ""
+
+#: dselect/install:102
+msgid "Some errors occurred while unpacking. Packages that were installed"
+msgstr ""
+
+#: dselect/install:103
+msgid "will be configured. This may result in duplicate errors"
+msgstr ""
+
+#: dselect/install:104
+msgid "or errors caused by missing dependencies. This is OK, only the errors"
+msgstr "wallau a achosir gan ddibyniaethau coll. Mae hyn yn iawn, dim ond y"
+
+#: dselect/install:105
+msgid ""
+"above this message are important. Please fix them and run [I]nstall again"
+msgstr ""
+"gwallau uwchben y neges hwn sy'n bwysig. Trwsiwch nhw a rhedwch [S]efydlu "
+"eto."
+
+#: dselect/update:30
+msgid "Merging available information"
+msgstr ""

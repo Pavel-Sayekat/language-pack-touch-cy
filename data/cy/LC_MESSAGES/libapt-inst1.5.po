@@ -1,0 +1,300 @@
+# APT yn Gymraeg: APT in Welsh.
+# This file is under the same licence as APT itself.
+# Dafydd Harries <daf@muse.19inch.net>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: APT\n"
+"Report-Msgid-Bugs-To: APT Development Team <deity@lists.debian.org>\n"
+"POT-Creation-Date: 2012-03-15 19:05+0000\n"
+"PO-Revision-Date: 2015-10-22 15:30+0000\n"
+"Last-Translator: Dafydd Harries <Unknown>\n"
+"Language-Team: Welsh <cy@pengwyn.linux.org.uk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-06-13 10:31+0000\n"
+"X-Generator: Launchpad (build 18097)\n"
+"Language: cy\n"
+
+#: apt-inst/contrib/extracttar.cc:114
+msgid "Failed to create pipes"
+msgstr "Methwyd creu pibau"
+
+#: apt-inst/contrib/extracttar.cc:141
+msgid "Failed to exec gzip "
+msgstr "Methwyd gweithredu gzip "
+
+#: apt-inst/contrib/extracttar.cc
+msgid "Corrupted archive"
+msgstr "Archif llygredig"
+
+#: apt-inst/contrib/extracttar.cc
+msgid "Tar checksum failed, archive corrupted"
+msgstr ""
+
+#: apt-inst/contrib/extracttar.cc
+#, c-format
+msgid "Unknown TAR header type %u, member %s"
+msgstr "Math pennawd TAR anhysbys %u, aelod %s"
+
+#: apt-inst/contrib/arfile.cc
+msgid "Invalid archive signature"
+msgstr "Llofnod archif annilys"
+
+#: apt-inst/contrib/arfile.cc
+msgid "Error reading archive member header"
+msgstr "Gwall wrth ddarllen pennawd aelod archif"
+
+#: apt-inst/contrib/arfile.cc
+#, c-format
+msgid "Invalid archive member header %s"
+msgstr ""
+
+#: apt-inst/contrib/arfile.cc
+msgid "Invalid archive member header"
+msgstr "Pennawd aelod archif annilys"
+
+#: apt-inst/contrib/arfile.cc
+msgid "Archive is too short"
+msgstr "Mae'r archif yn rhy fyr"
+
+#: apt-inst/contrib/arfile.cc
+msgid "Failed to read the archive headers"
+msgstr "Methwyd darllen pennawdau'r archif"
+
+#: apt-inst/filelist.cc
+msgid "DropNode called on still linked node"
+msgstr "Galwyd DropNode ar nôd sydd o hyd wedi ei gysylltu"
+
+#: apt-inst/filelist.cc
+msgid "Failed to locate the hash element!"
+msgstr "Methyd lleoli yr elfen <hash>!"
+
+#: apt-inst/filelist.cc
+msgid "Failed to allocate diversion"
+msgstr "Methwyd neilltuo dargyfeiriad"
+
+#: apt-inst/filelist.cc
+msgid "Internal error in AddDiversion"
+msgstr ""
+
+#: apt-inst/filelist.cc
+#, c-format
+msgid "Trying to overwrite a diversion, %s -> %s and %s/%s"
+msgstr "Yn ceisio trosysgrifo dargyfeiriad, %s -> %s a %s/%s"
+
+# FIXME: "the"
+#: apt-inst/filelist.cc
+#, c-format
+msgid "Double add of diversion %s -> %s"
+msgstr "Ychwanegiad dwbl o'r dargyfeiriad %s -> %s"
+
+#: apt-inst/filelist.cc
+#, c-format
+msgid "Duplicate conf file %s/%s"
+msgstr "Ffeil cyfluniad dyblyg %s/%s"
+
+#: apt-inst/dirstream.cc
+#, c-format
+msgid "Failed to write file %s"
+msgstr ""
+
+#: apt-inst/dirstream.cc
+#, c-format
+msgid "Failed to close file %s"
+msgstr "Methwyd cau ffeil %s"
+
+#: apt-inst/extract.cc
+#, c-format
+msgid "The path %s is too long"
+msgstr "Mae'r llwybr %s yn rhy hir"
+
+#: apt-inst/extract.cc
+#, c-format
+msgid "Unpacking %s more than once"
+msgstr "Yn dadbacio %s mwy nag unwaith"
+
+#: apt-inst/extract.cc
+#, c-format
+msgid "The directory %s is diverted"
+msgstr "Mae'r cyfeiriadur %s wedi ei ddargyfeirio"
+
+#: apt-inst/extract.cc
+#, c-format
+msgid "The package is trying to write to the diversion target %s/%s"
+msgstr "Mae'r pecyn yn ceisio ysgrifennu i'r targed dargyfeiriad %s/%s"
+
+#: apt-inst/extract.cc
+msgid "The diversion path is too long"
+msgstr "Mae llwybr y dargyfeiriad yn rhy hir"
+
+#: apt-inst/extract.cc
+#, c-format
+msgid "Failed to stat %s"
+msgstr "Methodd stat() o %s"
+
+#: apt-inst/extract.cc
+#, c-format
+msgid "Failed to rename %s to %s"
+msgstr "Methwyd ailenwi %s at %s"
+
+#: apt-inst/extract.cc
+#, c-format
+msgid "The directory %s is being replaced by a non-directory"
+msgstr ""
+"Mae'r cyfeiriadur %s yn cael ei amnewid efo rhywbeth nid cyfeiriadur ydyw"
+
+#: apt-inst/extract.cc
+msgid "Failed to locate node in its hash bucket"
+msgstr "Methwyd lleoli nôd yn ei fwced stwnsh"
+
+#: apt-inst/extract.cc
+msgid "The path is too long"
+msgstr "Mae'r llwybr yn rhy hir"
+
+# FIXME: wtf?
+#: apt-inst/extract.cc
+#, c-format
+msgid "Overwrite package match with no version for %s"
+msgstr "Cyfatebiad pecyn trosysgrifo gyda dim fersiwn am %s"
+
+#: apt-inst/extract.cc
+#, c-format
+msgid "File %s/%s overwrites the one in the package %s"
+msgstr "Mae'r ffeil %s/%s yn trosysgrifo'r un yn y pecyn %s"
+
+#: apt-inst/extract.cc
+#, c-format
+msgid "Unable to read %s"
+msgstr "Ni ellir darllen %s"
+
+#: apt-inst/extract.cc
+#, c-format
+msgid "Unable to stat %s"
+msgstr "Ni ellir gwneud stat() o %s"
+
+#: apt-inst/deb/dpkgdb.cc:51 apt-inst/deb/dpkgdb.cc:57
+#, c-format
+msgid "Failed to remove %s"
+msgstr "Methwyd dileu %s"
+
+#: apt-inst/deb/dpkgdb.cc:106 apt-inst/deb/dpkgdb.cc:108
+#, c-format
+msgid "Unable to create %s"
+msgstr "Ni ellir creu %s"
+
+#: apt-inst/deb/dpkgdb.cc:114
+#, c-format
+msgid "Failed to stat %sinfo"
+msgstr "Methwyd stat() ar %sinfo"
+
+#: apt-inst/deb/dpkgdb.cc:119
+msgid "The info and temp directories need to be on the same filesystem"
+msgstr "Rhaid i'r cyfeiriaduron 'info' a 'temp' for ar yr un system ffeiliau"
+
+#: apt-inst/deb/dpkgdb.cc:135
+msgid "Reading package lists"
+msgstr ""
+
+#: apt-inst/deb/dpkgdb.cc:176
+#, c-format
+msgid "Failed to change to the admin dir %sinfo"
+msgstr "Methwyd newid i'r cyfeiriadur gweinyddiaeth %sinfo"
+
+#: apt-inst/deb/dpkgdb.cc:197 apt-inst/deb/dpkgdb.cc:351
+#: apt-inst/deb/dpkgdb.cc:444
+msgid "Internal error getting a package name"
+msgstr ""
+
+#: apt-inst/deb/dpkgdb.cc:201 apt-inst/deb/dpkgdb.cc:382
+msgid "Reading file listing"
+msgstr ""
+
+#: apt-inst/deb/dpkgdb.cc:212
+#, c-format
+msgid ""
+"Failed to open the list file '%sinfo/%s'. If you cannot restore this file "
+"then make it empty and immediately re-install the same version of the "
+"package!"
+msgstr ""
+"Methwyd agor y ffeil rhestr '%sinfo/%s'. Os na allwch adfer y ffeil hwn yna "
+"gwnewch e'n wag ac yna ail sefydlwch yr un ferswin o'r pecyn yn syth!"
+
+# FIXME
+#: apt-inst/deb/dpkgdb.cc:225 apt-inst/deb/dpkgdb.cc:238
+#, c-format
+msgid "Failed reading the list file %sinfo/%s"
+msgstr "Methwyd darllen y ffeil rhestr %sinfo/%s"
+
+#: apt-inst/deb/dpkgdb.cc:262
+msgid "Internal error getting a node"
+msgstr ""
+
+# FIXME: literal
+#: apt-inst/deb/dpkgdb.cc:305
+#, c-format
+msgid "Failed to open the diversions file %sdiversions"
+msgstr "Methwyd agor y ffeil dargyfeirio %sdiversions"
+
+#: apt-inst/deb/dpkgdb.cc:320
+msgid "The diversion file is corrupted"
+msgstr "Mae'r ffeil dargyfeirio wed ei lygru"
+
+#: apt-inst/deb/dpkgdb.cc:327 apt-inst/deb/dpkgdb.cc:332
+#: apt-inst/deb/dpkgdb.cc:337
+#, c-format
+msgid "Invalid line in the diversion file: %s"
+msgstr "Llinell annilys yn y ffeil dargyfeirio: %s"
+
+#: apt-inst/deb/dpkgdb.cc:358
+msgid "Internal error adding a diversion"
+msgstr ""
+
+#: apt-inst/deb/dpkgdb.cc:379
+msgid "The pkg cache must be initialized first"
+msgstr ""
+
+#: apt-inst/deb/dpkgdb.cc:439
+#, c-format
+msgid "Failed to find a Package: header, offset %lu"
+msgstr ""
+
+#: apt-inst/deb/dpkgdb.cc:461
+#, c-format
+msgid "Bad ConfFile section in the status file. Offset %lu"
+msgstr "Adrean \"ConfFile\" gwael yn y ffeil statws. Atred: %lu"
+
+#: apt-inst/deb/dpkgdb.cc:466
+#, c-format
+msgid "Error parsing MD5. Offset %lu"
+msgstr "Gwall wrth ramadegu MD5. Atred: %lu"
+
+#: apt-inst/deb/debfile.cc
+#, c-format
+msgid "This is not a valid DEB archive, missing '%s' member"
+msgstr "Nid yw hyn yn archif DEB dilys, aelod '%s' ar goll"
+
+#. FIXME: add data.tar.xz here - adding it now would require a Translation round for a very small gain
+#: apt-inst/deb/debfile.cc:52
+#, c-format
+msgid "This is not a valid DEB archive, it has no '%s', '%s' or '%s' member"
+msgstr ""
+
+#: apt-inst/deb/debfile.cc:112
+#, c-format
+msgid "Couldn't change to %s"
+msgstr "Methwyd newid i %s"
+
+#: apt-inst/deb/debfile.cc
+#, c-format
+msgid "Internal error, could not locate member %s"
+msgstr ""
+
+#: apt-inst/deb/debfile.cc:179
+msgid "Failed to locate a valid control file"
+msgstr "Methwyd lleoli ffeil rheoli dilys"
+
+#: apt-inst/deb/debfile.cc
+msgid "Unparsable control file"
+msgstr ""

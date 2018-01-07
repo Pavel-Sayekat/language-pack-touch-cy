@@ -1,0 +1,515 @@
+# Welsh translation for messaging-app
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the messaging-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: messaging-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-06-30 12:56+0000\n"
+"PO-Revision-Date: 2015-07-30 13:18+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Welsh <cy@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : (n != 8 && n != 11) ? "
+"2 : 3;\n"
+"X-Launchpad-Export-Date: 2016-07-08 19:32+0000\n"
+"X-Generator: Launchpad (build 18115)\n"
+
+#. TRANSLATORS: %1 is the first recipient the message is sent to, %2 is the count of remaining recipients
+#: ../src/qml/ThreadDelegate.qml:52
+#, qt-format
+msgid "%1 + %2"
+msgstr "%1 + %2"
+
+#: ../src/qml/dateUtils.js:65
+#, qt-format
+msgid "%1 hour call"
+msgid_plural "%1 hours call"
+msgstr[0] "Galwad %1 awr"
+msgstr[1] "Galwad %1 awr"
+msgstr[2] "Galwad %1 awr"
+msgstr[3] "Galwad %1 awr"
+
+#: ../src/qml/dateUtils.js:67
+#, qt-format
+msgid "%1 minute call"
+msgid_plural "%1 minutes call"
+msgstr[0] "Galwad %1 munud"
+msgstr[1] "Galwad %1 munud"
+msgstr[2] "Galwad %1 munud"
+msgstr[3] "Galwad %1 munud"
+
+#: ../src/qml/dateUtils.js:69
+#, qt-format
+msgid "%1 second call"
+msgid_plural "%1 seconds call"
+msgstr[0] "Galwad %1 eiliad"
+msgstr[1] "Galwad %1 eiliad"
+msgstr[2] "Galwad %1 eiliad"
+msgstr[3] "Galwad %1 eiliad"
+
+#: ../src/qml/MessagingBottomEdge.qml:36
+msgid "+"
+msgstr "+"
+
+#: ../src/qml/AudioRecordingBar.qml:156
+msgid "<<< Swipe to cancel"
+msgstr ""
+
+#: ../src/qml/MessageInfoDialog.qml:60
+msgid "Accepted"
+msgstr "Derbyniwyd"
+
+#: ../src/qml/Messages.qml:630
+msgid "Add"
+msgstr "Ychwanegu"
+
+#: ../src/qml/NewRecipientPage.qml:55
+msgid "Add recipient"
+msgstr "Ychwanegu derbynnydd"
+
+#: ../src/qml/NewRecipientPage.qml:77
+msgid "All"
+msgstr "Y cyfan"
+
+#: ../src/qml/ThreadDelegate.qml:94
+#, qt-format
+msgid "Attachment: %1 audio clip"
+msgid_plural "Attachments: %1 audio clips"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/qml/ThreadDelegate.qml:91
+#, qt-format
+msgid "Attachment: %1 contact"
+msgid_plural "Attachments: %1 contacts"
+msgstr[0] "Atodiadau: %1 cyswllt"
+msgstr[1] "Atodiadau: %1 cyswllt"
+msgstr[2] "Atodiadau: %1 cyswllt"
+msgstr[3] "Atodiadau: %1 cyswllt"
+
+#: ../src/qml/ThreadDelegate.qml:97
+#, qt-format
+msgid "Attachment: %1 file"
+msgid_plural "Attachments: %1 files"
+msgstr[0] "Atodiad: %1 ffeil"
+msgstr[1] "Atodiadau: %1 ffeil"
+msgstr[2] "Atodiadau: %1 ffeil"
+msgstr[3] "Atodiadau: %1 ffeil"
+
+#: ../src/qml/ThreadDelegate.qml:85
+#, qt-format
+msgid "Attachment: %1 image"
+msgid_plural "Attachments: %1 images"
+msgstr[0] "Atodiad: %1 delwedd"
+msgstr[1] "Atodiadau: %1 delwedd"
+msgstr[2] "Atodiadau: %1 delwedd"
+msgstr[3] "Atodiadau: %1 delwedd"
+
+#: ../src/qml/ThreadDelegate.qml:88
+#, qt-format
+msgid "Attachment: %1 video"
+msgid_plural "Attachments: %1 videos"
+msgstr[0] "Atodiad: %1 fideo"
+msgstr[1] "Atodiadau: %1 fideo"
+msgstr[2] "Atodiadau: %1 fideo"
+msgstr[3] "Atodiadau: %1 fideo"
+
+#: ../src/qml/MMS/MMSDefault.qml:28
+msgid "Audio attachment not supported"
+msgstr "Dim cefnogaeth i'r atodiad sain"
+
+#: ../src/qml/Messages.qml:868
+msgid "Away"
+msgstr ""
+
+#: ../src/qml/NewRecipientPage.qml:64
+msgid "Back"
+msgstr ""
+
+#: ../src/qml/Messages.qml:870
+msgid "Busy"
+msgstr ""
+
+#: ../src/qml/Messages.qml:619 ../src/qml/Messages.qml:701
+msgid "Call"
+msgstr "Galw"
+
+#: ../src/qml/MMS/Previewer.qml:62 ../src/qml/MainPage.qml:128
+#: ../src/qml/Messages.qml:442 ../src/qml/Messages.qml:456
+#: ../src/qml/MessagingContactEditorPage.qml:36
+#: ../src/qml/NewRecipientPage.qml:131 ../src/qml/SettingsPage.qml:56
+msgid "Cancel"
+msgstr "Diddymu"
+
+#. TRANSLATORS: %1 refers to the SIM card name or account name
+#: ../src/qml/Dialogs/SetDefaultSIMCardDialog.qml:29
+#, qt-format
+msgid "Change all Messaging associations to %1?"
+msgstr "Newid pob cysylltiad Negeseuon i %1?"
+
+#: ../src/qml/Dialogs/NoDefaultSIMCardDialog.qml:47
+#: ../src/qml/Dialogs/NoSIMCardSelectedDialog.qml:31
+#: ../src/qml/MessageInfoDialog.qml:133 ../src/qml/Messages.qml:963
+msgid "Close"
+msgstr "Cau"
+
+#: ../src/qml/EmptyState.qml:50
+msgid "Compose a new message by swiping up from the bottom of the screen."
+msgstr "Ysgrifennwch neges newydd drwy drawio i fyny o waelod y sgrîn"
+
+#: ../src/qml/AttachmentPanel.qml:155 ../src/qml/Messages.qml:712
+msgid "Contact"
+msgstr "Cyswllt"
+
+#: ../src/qml/MessagesListView.qml:136 ../src/qml/SwipeItemDemo.qml:185
+msgid "Copy"
+msgstr "Copïo"
+
+#: ../src/qml/MessageDelegateFactory.qml:45 ../src/qml/ThreadDelegate.qml:107
+msgid "Delete"
+msgstr "Dileu"
+
+#: ../src/qml/MessageInfoDialog.qml:64
+msgid "Deleted"
+msgstr "Wedi dileu"
+
+#: ../src/qml/MessageInfoDialog.qml:54
+msgid "Delivered"
+msgstr "Trosglwyddwyd"
+
+#: ../src/qml/Dialogs/SetDefaultSIMCardDialog.qml:64
+msgid "Don't ask again"
+msgstr "Peidiwch â gofyn eto"
+
+#: ../src/qml/Dialogs/FileSizeWarningDialog.qml:60
+msgid "Don't show again"
+msgstr ""
+
+#: ../src/qml/MessagingContactViewPage.qml:72
+msgid "Edit"
+msgstr "Golygu"
+
+#: ../src/qml/SettingsPage.qml:31
+msgid "Enable MMS group chat"
+msgstr "Galluogi sgwrs MMS ar y cyd"
+
+#: ../src/qml/MessageInfoDialog.qml:58
+msgid "Failed"
+msgstr "Methwyd"
+
+#: ../src/qml/MessageDelegateFactory.qml:148
+msgid "Failed!"
+msgstr "Methwyd!"
+
+#: ../src/qml/NewRecipientPage.qml:77
+msgid "Favorites"
+msgstr "Ffefrynnau"
+
+#: ../src/qml/Dialogs/FileSizeWarningDialog.qml:26
+msgid "File size warning"
+msgstr ""
+
+#: ../src/qml/MMS/MMSDefault.qml:33
+msgid "File type not supported"
+msgstr "Dim cefnogaeth i'r math o ffeil"
+
+#: ../src/qml/MessagesListView.qml:143
+msgid "Forward"
+msgstr ""
+
+#: ../src/qml/MessageInfoDialog.qml:97
+msgid "From"
+msgstr "O"
+
+#: ../src/qml/SwipeItemDemo.qml:78
+msgid "Got it"
+msgstr "Iawn"
+
+#: ../src/qml/MessageInfoDialog.qml:84
+msgid "Group"
+msgstr "Grŵp"
+
+#. TRANSLATORS: %1 refers to the number of participants in a group chat
+#: ../src/qml/Messages.qml:604
+#, qt-format
+msgid "Group (%1)"
+msgstr "Grŵp (%1)"
+
+#: ../src/qml/Dialogs/NoDefaultSIMCardDialog.qml:38
+msgid ""
+"If you wish to edit your SIM and other mobile preferences, please visit <a "
+"href=\"system_settings\">System Settings</a>."
+msgstr ""
+
+#: ../src/qml/AttachmentPanel.qml:104
+msgid "Image"
+msgstr ""
+
+#: ../src/qml/MMS/PreviewerImage.qml:37
+msgid "Image Preview"
+msgstr "Rhagolwg Delwedd"
+
+#: ../src/qml/MessagesListView.qml:111 ../src/qml/SwipeItemDemo.qml:177
+msgid "Info"
+msgstr "Gwybodaeth"
+
+#: ../src/qml/MessagesListView.qml:114
+msgid "MMS"
+msgstr "MMS"
+
+#: ../src/qml/MessageInfoDialog.qml:90
+msgid "Message info"
+msgstr "Gwybodaeth neges"
+
+#: ../src/qml/MainPage.qml:68
+msgid "Messages"
+msgstr "Negeseuon"
+
+#: ../src/messaging-app.desktop.in.in.h:4
+msgid "Messages;SMS;MMS;Text Messages;Text"
+msgstr "Negeseuon;SMS;MMS;Negeseuon Testun;Testun"
+
+#: ../src/messaging-app.desktop.in.in.h:1
+msgid "Messaging"
+msgstr "Negesu"
+
+#: ../src/messaging-app.desktop.in.in.h:2
+msgid "Messaging App"
+msgstr "Ap Negeseuon"
+
+#: ../src/messagingapplication.cpp:204 ../src/messaging-app.desktop.in.in.h:3
+msgid "Messaging application"
+msgstr "Ap Negeseuon"
+
+#: ../src/qml/MMSDelegate.qml:249
+msgid "Missing message data"
+msgstr "Data neges ar goll"
+
+#: ../src/qml/MessageInfoDialog.qml:82 ../src/qml/MessageInfoDialog.qml:99
+msgid "Myself"
+msgstr "Fi fy hun"
+
+#: ../src/qml/Messages.qml:475
+msgid "New Message"
+msgstr "Neges Newydd"
+
+#: ../src/qml/MainPage.qml:105 ../src/qml/MainPage.qml:235
+msgid "New message"
+msgstr ""
+
+#: ../src/qml/Dialogs/SetDefaultSIMCardDialog.qml:39
+msgid "No"
+msgstr "Na"
+
+#: ../src/qml/Dialogs/NoSIMCardSelectedDialog.qml:27
+msgid "No SIM card selected"
+msgstr "Heb ddewis cerdyn SIM"
+
+#: ../src/qml/Messages.qml:959
+msgid "No network"
+msgstr "Dim rhwydwaith"
+
+#: ../src/qml/Dialogs/NoMicrophonePermission.qml:26
+msgid "No permission to access microphone"
+msgstr ""
+
+#: ../src/qml/Messages.qml:866
+msgid "Offline"
+msgstr ""
+
+#: ../src/qml/Dialogs/FileSizeWarningDialog.qml:45
+#: ../src/qml/Dialogs/NoMicrophonePermission.qml:49
+#: ../src/qml/Dialogs/SimLockedDialog.qml:49
+msgid "Ok"
+msgstr "Iawn"
+
+#: ../src/qml/Messages.qml:864
+msgid "Online"
+msgstr ""
+
+#: ../src/qml/MessageInfoDialog.qml:66
+msgid "Pending"
+msgstr "Aros"
+
+#: ../src/qml/Dialogs/NoMicrophonePermission.qml:37
+msgid ""
+"Please grant access on <a href=\"system_settings\">System Settings &gt; "
+"Security &amp; Privacy</a>."
+msgstr ""
+
+#: ../src/qml/Dialogs/SimLockedDialog.qml:37
+msgid ""
+"Please unlock your SIM card to call or send a message. You can unlock your "
+"SIM card from the Network Indicator at the top of the screen or by visiting "
+"<a href=\"system_settings\">System Settings &gt; Security &amp; Privacy</a>."
+msgstr ""
+"Datglowch eich cerdyn SIM er mwyn galw neu anfon neges. Gallwch ddatgloi'r "
+"cerdyn SIM o'r Dangosydd Rhwydwaith ar dop y sgrîn neu drwy fynd i <a "
+"href=\"system_settings\">Gosodiadau System &gt; Diogelwch &amp; "
+"Preifatrwydd</a>."
+
+#: ../src/qml/MessageInfoDialog.qml:62 ../src/qml/MessageInfoDialog.qml:124
+msgid "Read"
+msgstr "Darllen"
+
+#: ../src/qml/MessageInfoDialog.qml:70 ../src/qml/MessageInfoDialog.qml:119
+msgid "Received"
+msgstr "Derbyniwyd"
+
+#: ../src/qml/ComposeBar.qml:137
+msgid "Remove"
+msgstr "Tynnu"
+
+#: ../src/qml/MessagesListView.qml:129 ../src/qml/SwipeItemDemo.qml:181
+msgid "Retry"
+msgstr "Ailgynnig"
+
+#: ../src/qml/Dialogs/SimLockedDialog.qml:26
+msgid "SIM Card is locked"
+msgstr "Cerdyn SIM ar glo"
+
+#: ../src/qml/MessagesListView.qml:114
+msgid "SMS"
+msgstr "SMS"
+
+#: ../src/qml/MMS/Previewer.qml:86
+#: ../src/qml/MMS/PreviewerMultipleContacts.qml:90
+#: ../src/qml/MessagingContactEditorPage.qml:48
+msgid "Save"
+msgstr "Cadw"
+
+#: ../src/qml/NewRecipientPage.qml:104
+msgid "Search"
+msgstr "Chwilio"
+
+#: ../src/qml/MainPage.qml:52 ../src/qml/NewRecipientPage.qml:93
+msgid "Search..."
+msgstr "Chwilio..."
+
+#: ../src/qml/MessageInfoDialog.qml:114
+msgid "Sent"
+msgstr "Anfonwyd"
+
+#: ../src/qml/MainPage.qml:96 ../src/qml/SettingsPage.qml:25
+msgid "Settings"
+msgstr "Gosodiadau"
+
+#: ../src/qml/MMS/Previewer.qml:93
+#: ../src/qml/MMS/PreviewerMultipleContacts.qml:98
+#: ../src/qml/MessagingContactViewPage.qml:61
+msgid "Share"
+msgstr "Rhannu"
+
+#: ../src/qml/MessageInfoDialog.qml:129
+msgid "Status"
+msgstr "Statws"
+
+#: ../src/qml/SwipeItemDemo.qml:256
+msgid "Swipe to delete"
+msgstr "Trawiwch i ddileu"
+
+#: ../src/qml/SwipeItemDemo.qml:206
+msgid "Swipe to reveal actions"
+msgstr "Trawiwch i ddangos gweithredoedd"
+
+#: ../src/qml/MessageInfoDialog.qml:56
+msgid "Temporarily Failed"
+msgstr "Methiant Dros Dro"
+
+#: ../src/qml/MMSDelegate.qml:85 ../src/qml/SMSDelegate.qml:56
+msgid "Text message copied to clipboard"
+msgstr "Copïwyd y neges destun i'r clipfwrdd"
+
+#: ../src/qml/Messages.qml:960
+#, qt-format
+msgid "There is currently no network on %1"
+msgstr "Does dim rhwydwaith ar %1 ar hyn o bryd"
+
+#: ../src/qml/Messages.qml:960
+msgid "There is currently no network."
+msgstr "Does dim rhwydwaith ar hyn o bryd"
+
+#: ../src/qml/MessageInfoDialog.qml:103
+msgid "To"
+msgstr "I"
+
+#: ../src/qml/MultiRecipientInput.qml:149
+msgid "To:"
+msgstr "I:"
+
+#: ../src/qml/dateUtils.js:44
+msgid "Today"
+msgstr "Heddiw"
+
+#: ../src/qml/MessageInfoDialog.qml:93
+msgid "Type"
+msgstr "Math"
+
+#: ../src/qml/Messages.qml:860
+msgid "Typing.."
+msgstr ""
+
+#: ../src/qml/MessageInfoDialog.qml:72 ../src/qml/MessageInfoDialog.qml:75
+msgid "Unknown"
+msgstr "Anhysbys"
+
+#: ../src/qml/MMS/MMSContact.qml:48 ../src/qml/ThumbnailContact.qml:44
+msgid "Unknown contact"
+msgstr "Cyswllt anhysbys"
+
+#: ../src/qml/AttachmentPanel.qml:117
+msgid "Video"
+msgstr ""
+
+#: ../src/qml/MMS/PreviewerVideo.qml:32
+msgid "Video Preview"
+msgstr "Rhagolwg Fideo"
+
+#: ../src/qml/MMS/MMSDefault.qml:31
+msgid "Video attachment not supported"
+msgstr "Dim cefnogaeth i'r atodiad fideo"
+
+#: ../src/qml/Dialogs/NoDefaultSIMCardDialog.qml:27
+msgid "Welcome to your Messaging app!"
+msgstr ""
+
+#: ../src/qml/SwipeItemDemo.qml:161
+msgid "Welcome to your Ubuntu messaging app."
+msgstr "Croeso i Ap Negeseuon Ubuntu"
+
+#: ../src/qml/ComposeBar.qml:424
+msgid "Write a message..."
+msgstr "Ysgrifennu neges..."
+
+#: ../src/qml/Dialogs/SetDefaultSIMCardDialog.qml:48
+msgid "Yes"
+msgstr "Iawn"
+
+#: ../src/qml/dateUtils.js:46
+msgid "Yesterday"
+msgstr "Ddoe"
+
+#: ../src/qml/Dialogs/FileSizeWarningDialog.qml:37
+msgid ""
+"You are trying to send big files (over 300Kb). Some operators might not be "
+"able to send it."
+msgstr ""
+
+#: ../src/qml/ComposeBar.qml:161
+msgid "You have to press and hold the record icon"
+msgstr ""
+
+#: ../src/qml/Dialogs/NoSIMCardSelectedDialog.qml:28
+msgid "You need to select a SIM card"
+msgstr "Mae angen dewis cerdyn SIM"
+
+#. TRANSLATORS: %1 is the SIM card name and %2 is the timestamp
+#: ../src/qml/AccountSectionDelegate.qml:77
+#, qt-format
+msgid "You switched to %1 @ %2"
+msgstr "Wedi newid i %1 @ %2"

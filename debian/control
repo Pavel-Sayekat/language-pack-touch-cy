@@ -1,0 +1,17 @@
+Source: language-pack-touch-cy
+Section: translations
+Priority: optional
+Maintainer: Language pack maintainers <language-packs@ubuntu.com>
+Build-Depends-Indep: gettext
+Build-Depends: debhelper (>= 8)
+Standards-Version: 3.9.6
+
+Package: language-pack-touch-cy
+Architecture: all
+Pre-Depends: dpkg (>= 1.16.1), ${misc:Pre-Depends}
+Depends: ${misc:Depends}, locales (>= 2.3.6)
+Recommends: 
+Conflicts: language-pack-cy
+Description: Ubuntu Touch translations for language Welsh
+ Translation data for all supported Ubuntu Touch packages for:
+ Welsh
